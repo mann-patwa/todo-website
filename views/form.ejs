@@ -1,0 +1,21 @@
+<%- include('partials/header') %> 
+<div class="container">
+    <div class="row">
+        <h1 class="text-center">New Todo</h1>
+        <hr>
+        <div class="col-6 offset-3">
+            <form action="/newTodo" method="POST" >
+                <div class = 'mb-3'>
+                    <b><label for="todo" class="form-label">Todo Heading</label></b>
+                    <input type="text" name="todo" class = 'form-control' id = "todo" placeholder="Todo Heading" required>
+                </div>
+                <div class="mb-3">
+                    <b><label for="description" class="form-label">Todo Description</label></b>
+                    <textarea name="description" id="description" class = 'form-control' cols ="60" placeholder = "Write the description for todo here" rows="10"></textarea>
+                </div>
+                <button type="submit" class="btn text-center btn-success">Submit</button>
+            </form>
+        </div>
+    </div>
+</div>
+<%- include('partials/footer') %> 
